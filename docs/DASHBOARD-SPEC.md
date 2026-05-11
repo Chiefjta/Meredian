@@ -2,7 +2,7 @@
 
 > Single web-based control center for managing the 9-agent Meredian team. Built by the Design & UX Agent + Core Development Agent, hosted locally or via Docker.
 >
-> Live scaffold: [`ARSYNEL/mission-control`](https://github.com/ARSYNEL/mission-control)
+> Live scaffold: [`Meredian-Inc/Meredian/apps/mission-control`](https://github.com/Meredian-Inc/Meredian/tree/main/apps/mission-control)
 
 ## Visual Reference
 
