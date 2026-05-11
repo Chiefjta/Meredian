@@ -27,22 +27,7 @@ export default defineConfig({
   build: {
     target: 'es2022',
     sourcemap: true,
-    rollupOptions: {
-      output: {
-        manualChunks: {
-          react: ['react', 'react-dom'],
-          tanstack: ['@tanstack/react-query'],
-          radix: [
-            '@radix-ui/react-dialog',
-            '@radix-ui/react-popover',
-            '@radix-ui/react-scroll-area',
-            '@radix-ui/react-separator',
-            '@radix-ui/react-slot',
-            '@radix-ui/react-tabs',
-            '@radix-ui/react-tooltip',
-          ],
-        },
-      },
-    },
+    // Let Vite/Rollup decide chunking. Manual chunks were grouping unused
+    // Radix primitives into the critical path; default splitting tree-shakes better.
   },
 });
