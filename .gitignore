@@ -1,0 +1,21 @@
+# Editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Build artifacts (this is a docs repo but futureproof)
+node_modules/
+dist/
+build/
+.next/
+.turbo/
+
+# Logs / env
+*.log
+.env
+.env.local
+.env.*.local
+
+# OS
+Thumbs.db
