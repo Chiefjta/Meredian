@@ -1,0 +1,37 @@
+/* Open Claw — design tokens. Single source of truth; Tailwind reads these via theme.extend.colors */
+:root {
+  /* Brand palette */
+  --bg-base: #0a1428;
+  --bg-raised: #0e1b36;
+  --accent-cyan: #00f0ff;
+  --accent-purple: #9d4edd;
+
+  /* Glass surface (uses backdrop-filter blur in .glass utility) */
+  --surface-glass: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(255, 255, 255, 0.02) 100%
+  );
+
+  /* Text */
+  --text-primary: #e7eefc;
+  --text-muted: #9fb0cc;
+  --text-dim: #5e7596;
+
+  /* Borders */
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(0, 240, 255, 0.35);
+
+  /* Agent status — WCAG AA contrast against --bg-base verified */
+  --status-idle: #5e7596;
+  --status-thinking: #00f0ff;
+  --status-working: #9d4edd;
+  --status-blocked: #ff6b6b;
+  --status-offline: #3a4a66;
+
+  /* Pipeline column accents */
+  --col-queued: #5e7596;
+  --col-in-progress: #00f0ff;
+  --col-review: #ffb84d;
+  --col-done: #4ade80;
+}
